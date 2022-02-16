@@ -4,6 +4,8 @@ import dotenv from "dotenv";
 const env_file =
   process.env.NODE_ENV === "production"
     ? "./env/.env.production"
+    : process.env.NODE_ENV === "test"
+    ? "./env/.env.test"
     : "./env/.env.development";
 dotenv.config({ path: path.join(path.resolve(), env_file) });
 

@@ -1,0 +1,8 @@
+{
+  "testEnvironment": "node",
+  "preset": "ts-jest",
+  "rootDir": ".",
+  "moduleNameMapper": {
+    "^@root/(.*)$": "<rootDir>/../src/$1"
+  }
+}
